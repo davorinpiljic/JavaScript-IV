@@ -73,11 +73,26 @@ class Person {
     className: 'webpt5',
     favSubjects: ['js', 'html', 'css'],
   })
-  // console.log(bob.speak())
-  // console.log(bob.favLanguage)
-  // console.log(bob.favSubjects)
-  // console.log(bob.PRAssignment('js'))
-  // console.log(bob.sprintChallenge(bob, 'js'))
+  const bobtwo = new Student({
+    name: 'bob two',
+    location: 'south america',
+    age: 50,
+    gender: 'm',
+    previousBackground: 'engineer',
+    className: 'webpt6',
+    favSubjects: ['javascript', 'html5', 'css less'],
+  })
+  
+  console.log(bob.speak())
+  console.log(bob.favLanguage)
+  console.log(bob.favSubjects)
+  console.log(bob.PRAssignment('js'))
+  console.log(bob.sprintChallenge(bob, 'js'))
+  console.log(bobtwo.speak())
+  console.log(bobtwo.favLanguage)
+  console.log(bobtwo.favSubjects)
+  console.log(bobtwo.PRAssignment('css'))
+  console.log(bobtwo.sprintChallenge(bobtwo, 'html5'))
   
   
   //instructor objects
@@ -90,9 +105,21 @@ class Person {
     specialty: 'Front-end',
     catchPhrase: `Don't forget the homies`
   });
-  // console.log(fred.age)
-  // console.log(fred.demo('js'))
-  // console.log(fred.grade(bob, 'js'))
+  const ed = new Instructor({
+    name: 'ed',
+    location: 'chicago',
+    age: 50,
+    gender: 'male',
+    favLanguage: 'html5',
+    specialty: 'Front-end',
+    catchPhrase: `Don't forget the html5`
+  });
+  console.log(fred.age)
+  console.log(fred.demo('js'))
+  console.log(fred.grade(bob, 'js'))
+  console.log(ed.age)
+  console.log(ed.demo('html5'))
+  console.log(ed.grade(bobtwo, 'js'))
   
   
   //project manager objects
@@ -107,8 +134,21 @@ class Person {
     gradClassName: 'cs1',
     favInstructor: 'bob instructor'
   });
+  const emiManager = new ProjectManager({
+    name: 'emi manager',
+    location: 'central america',
+    age: 100,
+    gender: 'female',
+    favLanguage: 'JavaScript and css with less',
+    specialty: 'full stack',
+    catchPhrase: `don't forget the less with your css`,
+    gradClassName: 'cs1',
+    favInstructor: 'ed instructor'
+  });
   
-  // console.log(bobManager.standUp('slack chan'))
-  // console.log(bobManager.debugsCode(bob, 'js'))
+  console.log(bobManager.standUp('slack chan'))
+  console.log(bobManager.debugsCode(bob, 'js'))
+  console.log(emiManager.standUp('random chan'))
+  console.log(emiManager.debugsCode(bobtwo, 'js'))
   
   
